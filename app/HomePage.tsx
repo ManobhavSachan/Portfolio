@@ -18,7 +18,6 @@ interface Props {
 const HomePage = ({ data }: Props) => {
     return (
         <>
-        {console.log(data)}
             <Header logo={data.main.name} />
             <Hero mainData={data.main} />
             <Socials socials={data.socials} />
@@ -27,7 +26,7 @@ const HomePage = ({ data }: Props) => {
             <Projects projectsData={data.projects} />
             <Experiences experienceData={data.experiences} educationData={data.educations} />
             <Contact />
-            <CallToAction />
+            {/* <CallToAction /> */}
             <Footer socials={data.socials} name={data.main.name} />
         </>
     )

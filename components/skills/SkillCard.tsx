@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 const Skill = ({ name, image }: skill) => {
 
     const { theme } = useTheme();
-    const [bgColor, setBgColor] = useState("")
+    const [bgColor, setBgColor] = useState("rgba(255, 255, 255, 0.07)")
     useEffect(() => {
         new FastAverageColor().getColorAsync(image)
             .then(color => {
